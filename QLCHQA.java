@@ -65,19 +65,17 @@ import com.mysql.cj.jdbc.NClob;
 import com.toedter.calendar.JDateChooser;
 
 public class QLCHQA extends JFrame {
-	private static JDateChooser jDateChooser1vn = new JDateChooser();
-	private static JTable tbl = new JTable();
-	private static JTable tbl2 = new JTable();
-	private static JTable tbl3 = new JTable();
-	private static JTable tbl4 = new JTable();
-	private JLabel a;
-	private JLabel a2;
-	private String imagePath;
-	private String imagePath2;
-	
-	public QLCHQA() {
-		setTitle("Quản Lý Bán Hàng - Cửa Hàng Quần Áo BRY" );
-		setSize(1400, 800);
+private static JTable tbl = new JTable();
+private static JTable tbl2 = new JTable();
+private static JTable tbl3 = new JTable();
+private static JTable tbl4 = new JTable();
+private JLabel a;
+private JLabel a2;
+private String imagePath;
+private String imagePath2;	
+public QLCHQA() {	
+	setTitle("Quản Lý Bán Hàng - Cửa Hàng Quần Áo BRY" );
+	setSize(1400, 800);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         JPanel panel = new JPanel();
         JPanel emptyJPanel = new JPanel();
@@ -118,63 +116,63 @@ public class QLCHQA extends JFrame {
         panel.add(pn);
  //Trang1       
         JPanel panelquanlynhanvien = new JPanel(new BorderLayout());
-		JLabel jLabel_1= new JLabel("Quản Lý Nhân Viên",JLabel.CENTER);
-		Font font = new Font("Serif",Font.CENTER_BASELINE,50);
-		jLabel_1.setFont(font);
-	    jLabel_1.setBackground(Color.pink);
-	    jLabel_1.setOpaque(true);
+	JLabel jLabel_1= new JLabel("Quản Lý Nhân Viên",JLabel.CENTER);
+	Font font = new Font("Serif",Font.CENTER_BASELINE,50);
+	jLabel_1.setFont(font);
+	jLabel_1.setBackground(Color.pink);
+	jLabel_1.setOpaque(true);
 		
-		panelquanlynhanvien.add(jLabel_1,BorderLayout.NORTH);
-		pn.add(panelquanlynhanvien,BorderLayout.CENTER);
-		JPanel pn1 = new JPanel();
-		pn1.setBackground(Color.pink);
-		pn1.setPreferredSize(new Dimension(800,180));
-		panelquanlynhanvien.add(pn1);
+	panelquanlynhanvien.add(jLabel_1,BorderLayout.NORTH);
+	pn.add(panelquanlynhanvien,BorderLayout.CENTER);
+	JPanel pn1 = new JPanel();
+	pn1.setBackground(Color.pink);
+	pn1.setPreferredSize(new Dimension(800,180));
+	panelquanlynhanvien.add(pn1);
 		
-		JPanel pn11 = new JPanel (new GridLayout(4,8));
-		pn11.setBackground(Color.pink);
-		pn11.setPreferredSize(new Dimension(1060,140));
-		pn1.add(pn11,BorderLayout.WEST);
+	JPanel pn11 = new JPanel (new GridLayout(4,8));
+	pn11.setBackground(Color.pink);
+	pn11.setPreferredSize(new Dimension(1060,140));
+	pn1.add(pn11,BorderLayout.WEST);
 		
-		JPanel pn12 = new JPanel();
-		pn12.setBackground(Color.pink);
-		pn12.setPreferredSize(new Dimension(120,170));
-		pn1.add(pn12);
-		a =new JLabel(" ");
-		a.setPreferredSize(new Dimension(120,160));
-	    pn12.add(a);	 
-		JLabel lblManv = new JLabel("    Mã nhân viên:");
-		JTextField txtManv = new JTextField();
-		JLabel lblTennv = new JLabel("    Tên nhân viên:");
-		JTextField txtTennv= new JTextField();
-		JLabel sdt = new JLabel("    SĐT");
-		JTextField txtsdt= new JTextField();
-		JLabel lblgt = new JLabel("    Giới tính:");
-		JTextField txtgt= new JTextField();
-		JLabel lblNgaylv = new JLabel("    Ngày vào làm việc:");
-		JTextField txtNgaylv = new JTextField();
-		JLabel lblNgaysinh = new JLabel("    Ngày sinh:");
-		JTextField txtNgaysinh = new JTextField();
-		JLabel lblchucvu = new JLabel("    Chức vụ:");
-		JTextField txtchucvu = new JTextField();	
-		JLabel themanh = new JLabel("    Thêm ảnh:");
-		JTextField txtthemanh = new JTextField();		
-		pn11.add(lblManv);
-		pn11.add(txtManv);
-		pn11.add(lblTennv);
-		pn11.add(txtTennv);
-		pn11.add(sdt);
-		pn11.add(txtsdt);
-		pn11.add(lblgt);
-		pn11.add(txtgt);
-		pn11.add(lblNgaylv);
-		pn11.add(txtNgaylv);
-		pn11.add(lblNgaysinh);
-		pn11.add(txtNgaysinh);
-		pn11.add(lblchucvu);
-		pn11.add(txtchucvu);		
+	JPanel pn12 = new JPanel();
+	pn12.setBackground(Color.pink);
+	pn12.setPreferredSize(new Dimension(120,170));
+	pn1.add(pn12);
+	a =new JLabel(" ");
+	a.setPreferredSize(new Dimension(120,160));
+	pn12.add(a);	 
+	JLabel lblManv = new JLabel("    Mã nhân viên:");
+	JTextField txtManv = new JTextField();
+	JLabel lblTennv = new JLabel("    Tên nhân viên:");
+	JTextField txtTennv= new JTextField();
+	JLabel sdt = new JLabel("    SĐT");
+	JTextField txtsdt= new JTextField();
+	JLabel lblgt = new JLabel("    Giới tính:");
+	JTextField txtgt= new JTextField();
+	JLabel lblNgaylv = new JLabel("    Ngày vào làm việc:");
+	JTextField txtNgaylv = new JTextField();
+	JLabel lblNgaysinh = new JLabel("    Ngày sinh:");
+	JTextField txtNgaysinh = new JTextField();
+	JLabel lblchucvu = new JLabel("    Chức vụ:");
+	JTextField txtchucvu = new JTextField();	
+	JLabel themanh = new JLabel("    Thêm ảnh:");
+	JTextField txtthemanh = new JTextField();		
+	pn11.add(lblManv);
+	pn11.add(txtManv);
+	pn11.add(lblTennv);
+	pn11.add(txtTennv);
+	pn11.add(sdt);
+	pn11.add(txtsdt);
+	pn11.add(lblgt);
+	pn11.add(txtgt);
+	pn11.add(lblNgaylv);
+	pn11.add(txtNgaylv);
+	pn11.add(lblNgaysinh);
+	pn11.add(txtNgaysinh);
+	pn11.add(lblchucvu);
+	pn11.add(txtchucvu);		
         pn11.add(themanh);
-		pn11.add(txtthemanh);
+	pn11.add(txtthemanh);
     	JPanel pn1a= new JPanel();
     	pn1a.setBackground(Color.pink);
         pn1a.setPreferredSize(new Dimension(1200,580));
@@ -199,8 +197,7 @@ public class QLCHQA extends JFrame {
     	tbl =new JTable(dm);
     	JScrollPane sc=new JScrollPane(tbl);
     	sc.setPreferredSize(new Dimension(1190,440));
-    	showData(dbcon.findAll());
-    	
+    	showData(dbcon.findAll());    	
         pn1a.add(sc,BorderLayout.SOUTH); 
         
         JPanel pn1b= new JPanel();
@@ -390,28 +387,28 @@ public class QLCHQA extends JFrame {
         JPanel panelquanlysanpham = new JPanel(new BorderLayout());
         JLabel jLabel_2= new JLabel("Quản Lý Sản Phẩm",JLabel.CENTER);
         Font font2 = new Font("Serif",Font.CENTER_BASELINE,50);
-  	    jLabel_2.setFont(font2); 
+  	jLabel_2.setFont(font2); 
         jLabel_2.setBackground(Color.pink);
         jLabel_2.setOpaque(true);
-  	    panelquanlysanpham.add(jLabel_2,BorderLayout.NORTH);
+  	panelquanlysanpham.add(jLabel_2,BorderLayout.NORTH);
   	    
-  	    JPanel pn2 = new JPanel();
-  	    pn2.setBackground(Color.pink);
+  	JPanel pn2 = new JPanel();
+  	pn2.setBackground(Color.pink);
       	pn2.setPreferredSize(new Dimension(800,180));
-  	    panelquanlysanpham.add(pn2);
+  	panelquanlysanpham.add(pn2);
 
-		JPanel pn21 = new JPanel (new GridLayout(4,8));
-		pn21.setBackground(Color.pink);
-		pn21.setPreferredSize(new Dimension(1030,140));
-		pn2.add(pn21,BorderLayout.WEST);
+	JPanel pn21 = new JPanel (new GridLayout(4,8));
+	pn21.setBackground(Color.pink);
+	pn21.setPreferredSize(new Dimension(1030,140));
+	pn2.add(pn21,BorderLayout.WEST);
 
-		JPanel pn22 = new JPanel();
-		pn22.setBackground(Color.pink);
-		pn22.setPreferredSize(new Dimension(160,170));
-		pn2.add(pn22);
-		a2 =new JLabel(" ");
-		a2.setPreferredSize(new Dimension(150,160));
-	    pn22.add(a2);	    
+	JPanel pn22 = new JPanel();
+	pn22.setBackground(Color.pink);
+	pn22.setPreferredSize(new Dimension(160,170));
+	pn2.add(pn22);
+	a2 =new JLabel(" ");
+	a2.setPreferredSize(new Dimension(150,160));
+	pn22.add(a2);	    
 
     	JLabel lblMasp = new JLabel("    Mã sản phẩm:");
         JTextField txtMasp = new JTextField();
@@ -421,18 +418,18 @@ public class QLCHQA extends JFrame {
     	JTextField txtTen = new JTextField();
     	JLabel lblsz = new JLabel("    Size");
     	JTextField txtsz = new JTextField();     	
-  	    JLabel lblSoluong = new JLabel("    Số lượng:");
-  	    JTextField txtSoluong = new JTextField();
-  	    JLabel lblGianhap = new JLabel("    Giá nhập:");
-  	    JTextField txtGianhap = new JTextField(); 
-  	    JLabel lblGiaban = new JLabel("    Giá bán:");
-  	    JTextField txtGiaban = new JTextField();
-  	    JLabel themanh2 = new JLabel("    Đường dẫn ảnh:");
-	    JTextField txtthemanh2 = new JTextField(); 
-  	    pn21.add(lblMasp);
-  	    pn21.add(txtMasp);
-  	    pn21.add(lblchatlieu);
-  	    pn21.add(txtchatlieu);
+  	JLabel lblSoluong = new JLabel("    Số lượng:");
+  	JTextField txtSoluong = new JTextField();
+  	JLabel lblGianhap = new JLabel("    Giá nhập:");
+  	JTextField txtGianhap = new JTextField(); 
+  	JLabel lblGiaban = new JLabel("    Giá bán:");  	    
+	JTextField txtGiaban = new JTextField();
+  	JLabel themanh2 = new JLabel("    Đường dẫn ảnh:");
+	JTextField txtthemanh2 = new JTextField(); 
+  	pn21.add(lblMasp);
+  	pn21.add(txtMasp);
+  	pn21.add(lblchatlieu);
+  	pn21.add(txtchatlieu);
      	pn21.add(lblTensp);
     	pn21.add(txtTen);
     	pn21.add(lblsz);
@@ -490,18 +487,18 @@ public class QLCHQA extends JFrame {
 	    btnThem2.addActionListener(new ActionListener() {
 	        @Override
 	        public void actionPerformed(ActionEvent e) {
-	    	    try {	    	    	
+	    	    try {			    
 	                int maSp = Integer.parseInt(txtMasp.getText());
 	                String chatlieu = txtchatlieu.getText();        
 	                String tenSp= txtTen.getText();
 	                String size= txtsz.getText();
 	                int soLuong = Integer.parseInt(txtSoluong.getText());
 	                String giaNhap = txtGianhap.getText();
-                    String giaBan = txtGiaban.getText();
-                    String anh = txtthemanh2.getText();
-                    Sanpham  sp = new Sanpham();
-                    sp.setAnh(imagePath2);
-            
+                        String giaBan = txtGiaban.getText();
+                        String anh = txtthemanh2.getText();
+                        Sanpham  sp = new Sanpham();
+                        sp.setAnh(imagePath2);
+             
 	                DefaultTableModel model = (DefaultTableModel) tbl2.getModel();
 	                model.addRow(new Object[]{maSp,chatlieu, tenSp,size, soLuong,giaNhap, giaBan,anh});
 
@@ -552,7 +549,7 @@ public class QLCHQA extends JFrame {
 				 clearTextFields();
 				}
 	    	 private void clearTextFields() {
-	        	 txtMasp.setText("");	       
+	             txtMasp.setText("");	       
 	             txtchatlieu.setText("");
 	             txtTen.setText("");
 	             txtsz.setText("");
@@ -566,8 +563,8 @@ public class QLCHQA extends JFrame {
 	     btnSua2.addActionListener(new ActionListener() {
 	    	 @Override
 	    	 public void actionPerformed(ActionEvent e) {
-	    		 Sanpham sp= new Sanpham();
-	           	 sp.setMaSp(Integer.parseInt(txtMasp.getText())); 
+	    	     Sanpham sp= new Sanpham();
+	             sp.setMaSp(Integer.parseInt(txtMasp.getText())); 
 	    	     sp.setChatLieu(txtchatlieu.getText());
 	    	     sp.setTenSp(txtTen.getText());
 	    	     sp.setSize(txtsz.getText());
@@ -1007,26 +1004,13 @@ public class QLCHQA extends JFrame {
     	sc4.setPreferredSize(new Dimension(1190,480));
     	pn52.add(sc4,BorderLayout.SOUTH);
     	showData4(dbcon.findAll4());
-    	
-        JPanel trong4 = new JPanel();
-        trong4.setPreferredSize(new Dimension(700,10));
-        trong4.setBackground(Color.pink);
-        trong4.setOpaque(true);
-        JButton btntimkiem4 = new JButton("Tìm kiếm");
-    	JTextField txttimkiem4= new JTextField(20);
-    	JButton ql4 = new JButton("Quay lại");
-    	ql4.setVisible(false);
-    	pn52.add(trong4);
-    	pn52.add(txttimkiem2);
-    	pn52.add(btntimkiem2);
-    	pn52.add(ql4);
 		
-		panelquanlydangnhap.add(jLabel_4,BorderLayout.NORTH);
+	panelquanlydangnhap.add(jLabel_4,BorderLayout.NORTH);
         pn.add(panelquanlydangnhap,BorderLayout.CENTER);
-	    panelquanlydangnhap.setVisible(false);
-	    btnThem4.addActionListener(new ActionListener() {
-	        @Override
-	        public void actionPerformed(ActionEvent e) {
+	panelquanlydangnhap.setVisible(false);
+	btnThem4.addActionListener(new ActionListener() {
+	        @Override	
+		public void actionPerformed(ActionEvent e) {
 	    	    try {	    	    		                
 	                String sdt = txtsdt4.getText();        
 	                String ten = txttaikhoan.getText();
@@ -1074,7 +1058,7 @@ public class QLCHQA extends JFrame {
 				 clearTextFields();
 				}
 	    	 private void clearTextFields() {
-	        	 txtsdt4.setText("");	       
+	             txtsdt4.setText("");	       
 	             txttaikhoan.setText("");
 	             txtmatkhau.setText("");
 	             txtchucvu4.setText("");  
@@ -1132,8 +1116,7 @@ public class QLCHQA extends JFrame {
     	            }
     	        }
     	    }
-    	});
-		
+    	});		
 	quanlynhanvien.addActionListener(e -> {            
 		if (!panelquanlynhanvien.isVisible()) {
              panelquanlynhanvien.setVisible(true);
@@ -1182,7 +1165,7 @@ public class QLCHQA extends JFrame {
 		 }		 
 	}
 	private void displayImage2(String imagePath2) {
-		if (imagePath2 != null && !imagePath2.isEmpty()) {
+	        if (imagePath2 != null && !imagePath2.isEmpty()) {
 	    ImageIcon originalIcon = new ImageIcon(imagePath2);
 	    Image originalImage = originalIcon.getImage();
 	    Image resizedImage = originalImage.getScaledInstance(150, 160, Image.SCALE_SMOOTH);
