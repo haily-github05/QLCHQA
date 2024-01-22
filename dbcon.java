@@ -8,7 +8,6 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
-
 public class dbcon {
 	static String url ="jdbc:mysql://localhost:3306/QL_CHQA";
 	static String user ="root";
@@ -161,22 +160,6 @@ public class dbcon {
 		return dn1List;
 		
 	}
-	public static List<Tk> timkiem4(Tk tk1) {
-		List<Tk>taikhoan1= new ArrayList<>();
-		String query ="SELECT * FROM QL_CHQA.DangNhap where sdt ='"+tk1.getSdt()+"'";
-		try {
-			Connection connection = getConnection();
-			Statement stmt = connection.createStatement();
-			ResultSet rs= stmt.executeQuery(query);
-			while (rs.next()) {
-				Tk tkhoan1 = new Tk(rs.getString("Sdt"),rs.getString("Taikhoan"),rs.getString("Matkhau"),rs.getString("Chucvu"));
-				taikhoan1.add(tkhoan1);
-			}
-		} catch (Exception e) {
-			// TODO: handle exception
-		}
-		return taikhoan1;
-	}
 	public static void xoa4(Tk tk) {
     	String query = "delete from QL_CHQA.DangNhap where Sdt='" + tk.getSdt() + "'";
     	try {
@@ -187,7 +170,6 @@ public class dbcon {
 			// TODO: handle exception
 		}
     }
-
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
       dbcon db = new dbcon();
